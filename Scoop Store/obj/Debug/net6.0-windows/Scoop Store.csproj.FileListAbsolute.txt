@@ -1,0 +1,22 @@
+Z:\Repositories\ScoopStore\Scoop Store\bin\Debug\net6.0-windows\Scoop Store.exe
+Z:\Repositories\ScoopStore\Scoop Store\bin\Debug\net6.0-windows\Scoop Store.deps.json
+Z:\Repositories\ScoopStore\Scoop Store\bin\Debug\net6.0-windows\Scoop Store.runtimeconfig.json
+Z:\Repositories\ScoopStore\Scoop Store\bin\Debug\net6.0-windows\Scoop Store.dll
+Z:\Repositories\ScoopStore\Scoop Store\bin\Debug\net6.0-windows\Scoop Store.pdb
+Z:\Repositories\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store.csproj.AssemblyReference.cache
+Z:\Repositories\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\MainWindow.g.cs
+Z:\Repositories\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\App.g.cs
+Z:\Repositories\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store_MarkupCompile.cache
+Z:\Repositories\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store_MarkupCompile.lref
+Z:\Repositories\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\MainWindow.baml
+Z:\Repositories\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store.g.resources
+Z:\Repositories\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store.GeneratedMSBuildEditorConfig.editorconfig
+Z:\Repositories\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store.AssemblyInfoInputs.cache
+Z:\Repositories\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store.AssemblyInfo.cs
+Z:\Repositories\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store.csproj.CoreCompileInputs.cache
+Z:\Repositories\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store.dll
+Z:\Repositories\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\refint\Scoop Store.dll
+Z:\Repositories\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store.pdb
+Z:\Repositories\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store.genruntimeconfig.cache
+Z:\Repositories\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\ref\Scoop Store.dll
+Z:\Repositories\ScoopStore\Scoop Store\bin\Debug\net6.0-windows\icons\favicon.png

@@ -1,0 +1,21 @@
+﻿<Window x:Class="Scoop_Store.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Scoop_Store" xmlns:System="clr-namespace:System;assembly=netstandard"
+        mc:Ignorable="d"
+        Title="Scoop Store"
+        Height="800"
+        Width="1600"
+        ResizeMode="NoResize"
+        WindowStyle="ThreeDBorderWindow"
+        Icon="/favicon.png"
+        Topmost="True"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!-- Achtergrond kleur -->
+        <Grid x:Name="mainGrid" Background="Black">
+        </Grid>
+    </Grid>
+</Window>
