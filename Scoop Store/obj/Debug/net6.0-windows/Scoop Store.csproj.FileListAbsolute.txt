@@ -20,3 +20,29 @@ Z:\Repositories\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store.pdb
 Z:\Repositories\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store.genruntimeconfig.cache
 Z:\Repositories\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\ref\Scoop Store.dll
 Z:\Repositories\ScoopStore\Scoop Store\bin\Debug\net6.0-windows\icons\favicon.png
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store.csproj.AssemblyReference.cache
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Window1.g.cs
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store_MarkupCompile.cache
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store_MarkupCompile.lref
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\bin\Debug\net6.0-windows\Scoop Store.exe
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\bin\Debug\net6.0-windows\icons\favicon.png
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\bin\Debug\net6.0-windows\scripts\installPostDependincies.ps1
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\bin\Debug\net6.0-windows\scripts\installScoopBackend.ps1
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\bin\Debug\net6.0-windows\Scoop Store.deps.json
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\bin\Debug\net6.0-windows\Scoop Store.runtimeconfig.json
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\bin\Debug\net6.0-windows\Scoop Store.dll
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\bin\Debug\net6.0-windows\Scoop Store.pdb
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Window1.baml
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store.g.resources
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store.AssemblyInfoInputs.cache
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store.AssemblyInfo.cs
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store.csproj.CoreCompileInputs.cache
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store.dll
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\refint\Scoop Store.dll
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store.pdb
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\Scoop Store.genruntimeconfig.cache
+C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\ref\Scoop Store.dll

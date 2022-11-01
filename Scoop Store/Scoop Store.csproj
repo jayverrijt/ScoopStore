@@ -19,6 +19,28 @@
   <ItemGroup>
     <None Update="icons\favicon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>    </None>
+    <None Update="scripts\installPostDependincies.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="scripts\installScoopBackend.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="scripts\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Window1.xaml.cs">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Window1.xaml">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Page>
   </ItemGroup>
 
 </Project>
