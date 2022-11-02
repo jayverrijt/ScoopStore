@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jay\\Documents\\GitHub\\ScoopStore\\Scoop Store\\Scoop Store.csproj": {}
+    "C:\\Users\\Jay\\Documents\\GitHub\\rev_ScoopStore\\Scoop Store\\Scoop Store.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jay\\Documents\\GitHub\\ScoopStore\\Scoop Store\\Scoop Store.csproj": {
+    "C:\\Users\\Jay\\Documents\\GitHub\\rev_ScoopStore\\Scoop Store\\Scoop Store.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jay\\Documents\\GitHub\\ScoopStore\\Scoop Store\\Scoop Store.csproj",
+        "projectUniqueName": "C:\\Users\\Jay\\Documents\\GitHub\\rev_ScoopStore\\Scoop Store\\Scoop Store.csproj",
         "projectName": "Scoop Store",
-        "projectPath": "C:\\Users\\Jay\\Documents\\GitHub\\ScoopStore\\Scoop Store\\Scoop Store.csproj",
+        "projectPath": "C:\\Users\\Jay\\Documents\\GitHub\\rev_ScoopStore\\Scoop Store\\Scoop Store.csproj",
         "packagesPath": "C:\\Users\\Jay\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jay\\Documents\\GitHub\\ScoopStore\\Scoop Store\\obj\\",
+        "outputPath": "C:\\Users\\Jay\\Documents\\GitHub\\rev_ScoopStore\\Scoop Store\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\obj\Debug\net6.0-windows\
+C:\Users\Jay\Documents\GitHub\rev_ScoopStore\Scoop Store\obj\Debug\net6.0-windows\
 Scoop_Store
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\Jay\Documents\GitHub\ScoopStore\Scoop Store\App.xaml
-21940794329
-
-61738527813
+C:\Users\Jay\Documents\GitHub\rev_ScoopStore\Scoop Store\App.xaml
+3-1462607578
+1262978277
+7-2024086191
 194618410957
-MainWindow.xaml;Window1.xaml;
+initProgress.xaml;MainWindow.xaml;settingsPage.xaml;
 
 False
 

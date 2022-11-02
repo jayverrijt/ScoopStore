@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -19,50 +18,50 @@ using System.Runtime.CompilerServices;
 
 namespace Scoop_Store
 {
-
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
-
-            Window1 window1 = new Window1();
             initScoop();
             InitializeComponent();
+
+
+
+            // Coloring
             mainGrid.Background = mijnKleuren.bgCol;
             mainLabel.Foreground = mijnKleuren.nordTheme.Nord10;
-            officeBlock.Foreground = mijnKleuren.nordTheme.Nord10;
+            gameBlock.Foreground = mijnKleuren.nordTheme.Nord10;
             prodBlock.Foreground = mijnKleuren.nordTheme.Nord10;
-            kantoorBlock.Foreground = mijnKleuren.nordTheme.Nord10;
+            devBlock.Foreground = mijnKleuren.nordTheme.Nord10;
             roundedBorder.Background = mijnKleuren.bgCol;
-            firefoxInstall.Background = mijnKleuren.bgCol;
-            firefoxInstall.Foreground = mijnKleuren.fgCol;
+            prodInstallerFirefox.Background = mijnKleuren.bgCol;
+            prodInstallerFirefox.Foreground = mijnKleuren.fgCol;
 
-            // Firefox
-            if (Directory.Exists("C:\\Users\\" + Environment.UserName + "\\scoop\\apps\\firefox"))
-            { firefoxInstall.Content = "Firefox: Geinstalleerd"; }
-            else { firefoxInstall.Content = "Firefox: Installeer"; }
         }
 
-        // Scoop Setup
-
-        static void initScoop()
+        public void initScoop() 
         {
-            Window1 window1 = new Window1();
+            initProgress progressScreen = new initProgress();
             string currentUsername = Environment.UserName;
+
             if (Directory.Exists("C:\\Users\\" + currentUsername + "\\scoop"))
             {
-                Console.WriteLine("Test Success!");
-            }
-            else
+                Console.WriteLine("Succes!");
+            } else
             {
-                window1.Show();
-                var backendInstallFile = @"scripts\\installScoopBackend.ps1";
+                // Installeren van Scoop
+                progressScreen.Show();
+
+                var backendInstallFile = @"scripts\installScoopBackend.ps1";
                 var backendInstall = new ProcessStartInfo()
                 {
                     FileName = "powershell.exe",
                     Arguments = $"-ExecutionPolicy RemoteSigned -file \"{backendInstallFile}\"",
                     UseShellExecute = false,
-                    CreateNoWindow = true
+                    CreateNoWindow = true,
                 };
                 var backendProcess = Process.Start(backendInstall);
                 backendProcess.WaitForExit();
@@ -72,16 +71,15 @@ namespace Scoop_Store
                 {
                     FileName = "powershell.exe",
                     Arguments = $"-ExecutionPolicy RemoteSigned -file \"{postInstallFile}\"",
-                    UseShellExecute = false, CreateNoWindow = true
+                    UseShellExecute = false,
+                    CreateNoWindow = true
                 };
                 var postProcess = Process.Start(postInstall);
                 postProcess.WaitForExit();
-                window1.Close();
+
+                progressScreen.Close();  
             }
-
         }
-
-
         public class mijnKleuren
         {
             public static Brush bgCol = mijnKleuren.nordTheme.Nord0;
@@ -109,11 +107,13 @@ namespace Scoop_Store
             }
         }
 
+        // Application Installation
+  
         private void firefoxInstall_Click(object sender, RoutedEventArgs e)
         {
             if (Directory.Exists("C:\\Users\\" + Environment.UserName + "\\scoop\\apps\\firefox"))
             {
-                firefoxInstall.Content = "Firefox: Geinstalleerd";
+                prodInstallerFirefox.Content = "Firefox: Geinstalleerd";
                 var firefoxUninstall = new ProcessStartInfo()
                 {
                     FileName = "powershell.exe",
@@ -121,9 +121,11 @@ namespace Scoop_Store
                     UseShellExecute = false,
                     CreateNoWindow = true,
                 };
-                Process.Start(firefoxUninstall);
-                firefoxInstall.Content = "Firefox: Installeer";
-            } else
+                var busyFirefoxUninstall = Process.Start(firefoxUninstall);
+                busyFirefoxUninstall.WaitForExit();
+                prodInstallerFirefox.Content = "Firefox: Installeer";
+            }
+            else
             {
                 var firefoxInstaller = new ProcessStartInfo()
                 {
@@ -132,13 +134,10 @@ namespace Scoop_Store
                     UseShellExecute = false,
                     CreateNoWindow = true,
                 };
-                Process.Start(firefoxInstaller);
-                firefoxInstall.Content = "Firefox: Geinstalleerd";
-            } 
+                var busyFirefoxInstall = Process.Start(firefoxInstaller);
+                busyFirefoxInstall.WaitForExit();
+                prodInstallerFirefox.Content = "Firefox: Geinstalleerd";
+            }
         }
-   
-
-
     }
-
-   }
+}

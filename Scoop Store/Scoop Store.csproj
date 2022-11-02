@@ -10,21 +10,13 @@
 
   <ItemGroup>
     <None Remove="favicon.png" />
+    <None Remove="icons\favicon.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="favicon.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="icons\favicon.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>    </None>
-    <None Update="scripts\installPostDependincies.ps1">
+    <Content Include="icons\favicon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="scripts\installScoopBackend.ps1">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -32,15 +24,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Window1.xaml.cs">
-      <CopyToOutputDirectory></CopyToOutputDirectory>
-    </Compile>
+    <Resource Include="favicon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="Window1.xaml">
-      <CopyToOutputDirectory></CopyToOutputDirectory>
-    </Page>
+    <None Update="scripts\installPostDependincies.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="scripts\installScoopBackend.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

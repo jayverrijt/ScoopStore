@@ -3,20 +3,19 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Scoop_Store" xmlns:System="clr-namespace:System;assembly=netstandard"
+        xmlns:local="clr-namespace:Scoop_Store"
         mc:Ignorable="d"
         Title="Scoop Store"
         Height="500"
         Width="1200"
         ResizeMode="NoResize"
         WindowStyle="None"
-        Icon="/favicon.png"
         AllowsTransparency="True"
         Background="Transparent"
-        WindowStartupLocation="CenterScreen">
-    <Border x:Name="roundedBorder" CornerRadius="25" BorderBrush="Black" BorderThickness="2" Padding="6" Background="White">
+        WindowStartupLocation="CenterScreen" Icon="/favicon.png">
+    <!--Rounded Corners + Grid -->
+    <Border x:Name="roundedBorder" CornerRadius="25" BorderBrush="Black" BorderThickness="2" Padding="6" Background="Black">
         <Grid>
-            <!-- Achtergrond kleur -->
             <Grid x:Name="mainGrid" Background="Black">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"></ColumnDefinition>
@@ -30,10 +29,13 @@
                     <RowDefinition Height="2*"></RowDefinition>
                     <RowDefinition Height="2*"></RowDefinition>
                 </Grid.RowDefinitions>
+                
+                <!--Categorieën-->
                 <TextBlock x:Name="prodBlock" Text="Productiviteit" Foreground="White" FontSize="48px" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"></TextBlock>
-                <TextBlock x:Name="kantoorBlock" Text="Kantoor" Foreground="White" FontSize="48px" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"></TextBlock>
-                <TextBlock x:Name="officeBlock" Text="Office" Foreground="White" FontSize="48px" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"></TextBlock>
-                <Label x:Name="mainLabel" Grid.RowSpan="4" FontSize="48px"  Foreground="White" Content="De Scoop Store" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold">
+                <TextBlock x:Name="gameBlock" Text="Games" Foreground="White" FontWeight="Bold"  FontSize="48px" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Bold" Grid.Column="2"></TextBlock>
+                <TextBlock x:Name="devBlock" Text="Development" Foreground="White" FontSize="48px" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Bold" Grid.Column="3"></TextBlock>            
+                    <!-- Vertical De Scoop Store label -->
+                <Label x:Name="mainLabel" Grid.RowSpan="4" FontSize="48px" Foreground="White" Content="De Scoop Store" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold">
                     <Label.LayoutTransform>
                         <TransformGroup>
                             <RotateTransform Angle="90"/>
@@ -41,8 +43,14 @@
                         </TransformGroup>
                     </Label.LayoutTransform>
                 </Label>
+                
+                <!-- Productiveit Apps -->
+                <Button x:Name="prodInstallerFirefox" Content="Firefox; Installeer" Background="Transparent" BorderBrush="Transparent" Foreground="White" Grid.ColumnSpan="2" Margin="169,69,0,69" Grid.RowSpan="2" Click="firefoxInstall_Click"></Button>
+                <!--Firefox-->
+                <!-- Games -->
+                
+                <!-- Developement Apps -->
 
-                <Button x:Name="firefoxInstall" Content="Firefox: Installeer" Background="Black" Foreground="White" Grid.ColumnSpan="2" Margin="169,69,0,92" Grid.RowSpan="2" Click="firefoxInstall_Click"/>
             </Grid>
         </Grid>
     </Border>
