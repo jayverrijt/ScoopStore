@@ -29,12 +29,12 @@
                     <RowDefinition Height="2*"></RowDefinition>
                     <RowDefinition Height="2*"></RowDefinition>
                 </Grid.RowDefinitions>
-                
+
                 <!--Categorieën-->
                 <TextBlock x:Name="prodBlock" Text="Productiviteit" Foreground="White" FontSize="48px" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"></TextBlock>
                 <TextBlock x:Name="gameBlock" Text="Games" Foreground="White" FontWeight="Bold"  FontSize="48px" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Bold" Grid.Column="2"></TextBlock>
-                <TextBlock x:Name="devBlock" Text="Development" Foreground="White" FontSize="48px" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Bold" Grid.Column="3"></TextBlock>            
-                    <!-- Vertical De Scoop Store label -->
+                <TextBlock x:Name="devBlock" Text="Development" Foreground="White" FontSize="48px" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Bold" Grid.Column="3"></TextBlock>
+                <!-- Vertical De Scoop Store label -->
                 <Label x:Name="mainLabel" Grid.RowSpan="4" FontSize="48px" Foreground="White" Content="De Scoop Store" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold">
                     <Label.LayoutTransform>
                         <TransformGroup>
@@ -43,14 +43,13 @@
                         </TransformGroup>
                     </Label.LayoutTransform>
                 </Label>
-                
+
                 <!-- Productiveit Apps -->
                 <Button x:Name="prodInstallerFirefox" Content="Firefox; Installeer" Background="Transparent" BorderBrush="Transparent" Foreground="White" Grid.ColumnSpan="2" Margin="169,69,0,69" Grid.RowSpan="2" Click="firefoxInstall_Click"></Button>
-                <!--Firefox-->
                 <!-- Games -->
-                
+                <Button x:Name="prodInstallerSteam" Content="Steam; Installeer" Background="Transparent" Click="steamInstall_Click" BorderBrush="Transparent"  Foreground="White" Grid.Column="1" Grid.ColumnSpan="3" Margin="338,69,338,69" Grid.RowSpan="2"/>
                 <!-- Developement Apps -->
-
+                <Button x:Name="prodInstallerMSTerminal" Content="Windows Terminal; Installeer" Background="Transparent" Click="msTermInstall_Click" BorderBrush="Transparent" Foreground="White" Grid.Column="3" Margin="0,69,0,69" Grid.RowSpan="2"/>
             </Grid>
         </Grid>
     </Border>

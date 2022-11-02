@@ -139,5 +139,67 @@ namespace Scoop_Store
                 prodInstallerFirefox.Content = "Firefox: Geinstalleerd";
             }
         }
+
+        private void steamInstall_Click(object sender, RoutedEventArgs e) 
+        {
+            if (Directory.Exists("C:\\Users\\" + Environment.UserName + "\\scoop\\apps\\steam-portable"))
+            {
+                prodInstallerSteam.Content = "Steam: Geinstalleerd";
+                var steamUninstall = new ProcessStartInfo()
+                {
+                    FileName = "powershell.exe",
+                    Arguments = $"-ExecutionPolicy RemoteSigned scoop uninstall steam-portable",
+                    UseShellExecute = false,
+                    CreateNoWindow = true
+                };
+                var busySteamUninstaller = Process.Start(steamUninstall);
+                busySteamUninstaller.WaitForExit();
+                prodInstallerSteam.Content = "Steam; Installeer";
+            } else
+            {
+                var steamInstall = new ProcessStartInfo()
+                {
+                    FileName = "powershell.exe",
+                    Arguments = $"-ExecutionPolicy RemoteSigned scoop install steam-portable",
+                    UseShellExecute = false,
+                    CreateNoWindow = true
+                };
+                var busySteamInstall = Process.Start(steamInstall);
+                busySteamInstall.WaitForExit();
+                prodInstallerSteam.Content = "Steam: Geinstalleerd";
+
+            }
+        }
+
+        private void msTermInstall_Click(object sender, RoutedEventArgs e)
+        {
+            if (Directory.Exists("C:\\Users\\" + Environment.UserName + "\\scoop\\apps\\windows-terminal"))
+            {
+                prodInstallerMSTerminal.Content = "Windows Terminal: Geinstalleerd";
+                var msTermUninstall = new ProcessStartInfo()
+                {
+                    FileName = "powershell.exe",
+                    Arguments = $"-ExecutionPolicy RemoteSigned scoop uninstall windows-terminal",
+                    UseShellExecute = false,
+                    CreateNoWindow = true
+                };
+                var busymsTermUninstaller = Process.Start(msTermUninstall);
+                busymsTermUninstaller.WaitForExit();
+                prodInstallerMSTerminal.Content = "Windows Terminal; Installeer";
+            }
+            else
+            {
+                var msTermInstall = new ProcessStartInfo()
+                {
+                    FileName = "powershell.exe",
+                    Arguments = $"-ExecutionPolicy RemoteSigned scoop install windows-terminal",
+                    UseShellExecute = false,
+                    CreateNoWindow = true
+                };
+                var busymsTermInstall = Process.Start(msTermInstall);
+                busymsTermInstall.WaitForExit();
+                prodInstallerMSTerminal.Content = "Windows Terminal: Geinstalleerd";
+            }
+        }
     }
 }
