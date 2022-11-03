@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Scoop_Store"
-        mc:Ignorable="d"
+        mc:Ignorable="d"    
         Title="Scoop Store"
         Height="500"
         Width="1200"
@@ -46,6 +46,7 @@
 
                 <!-- Productiveit Apps -->
                 <Button x:Name="prodInstallerFirefox" Content="Firefox; Installeer" Background="Transparent" BorderBrush="Transparent" Foreground="White" Grid.ColumnSpan="2" Margin="169,69,0,69" Grid.RowSpan="2" Click="firefoxInstall_Click"></Button>
+                <Button x:Name="prodInstallerSpotify" Content="Spotify; Installeer" Background="Transparent" BorderBrush="Transparent" Foreground="White" Click="spotifyInstall_Click" Grid.ColumnSpan="2" Margin="169,69,0,0" Grid.Row="1"/>
                 <!-- Games -->
                 <Button x:Name="prodInstallerSteam" Content="Steam; Installeer" Background="Transparent" Click="steamInstall_Click" BorderBrush="Transparent"  Foreground="White" Grid.Column="1" Grid.ColumnSpan="3" Margin="338,69,338,69" Grid.RowSpan="2"/>
                 <!-- Developement Apps -->

@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using System.IO;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
+using System.IO.Enumeration;
 
 namespace Scoop_Store
 {
@@ -199,6 +200,36 @@ namespace Scoop_Store
                 var busymsTermInstall = Process.Start(msTermInstall);
                 busymsTermInstall.WaitForExit();
                 prodInstallerMSTerminal.Content = "Windows Terminal: Geinstalleerd";
+            }
+        }
+
+        private void spotifyInstall_Click(object sender, RoutedEventArgs e)
+        {
+            if(Directory.Exists("C:\\Users\\" + Environment.UserName + "\\scoop\\apps\\spotify"))
+            {
+                prodInstallerSpotify.Content = "Spotify: Geinstalleerd";
+                var spotifyUninstaller = new ProcessStartInfo
+                {
+                    FileName = "powershell",
+                    Arguments = $"-ExecutionPolicy RemoteSigned scoop uninstall spotify-latest",
+                    UseShellExecute = false,
+                    CreateNoWindow = true
+                };
+                var busySpotifyUninstaller = Process.Start(spotifyUninstaller);
+                busySpotifyUninstaller.WaitForExit();
+                prodInstallerSpotify.Content = "Spotify: Installeer";
+            } else
+            {
+                var spotifyInstall = new ProcessStartInfo()
+                {
+                    FileName = "powershell.exe",
+                    Arguments = $"-ExecutionPolicy RemoteSigned scoop bucket add spotify https://github.com/TheRandomLabs/Scoop-Spotify.git; scoop install spotify-latest",
+                    UseShellExecute = false,
+                    CreateNoWindow = true
+                };
+                var busySpotifyInstall = Process.Start(spotifyInstall);
+                busySpotifyInstall.WaitForExit();
+                prodInstallerSpotify.Content = "Spotify: Geinstalleerd";
             }
         }
     }
